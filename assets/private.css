@@ -26,15 +26,15 @@
 }
 
 .c-header__icon--cart-img img {
-  max-width: 50px;
+  max-width: 30px;
 }
 
 .c-header__inline-menu {
-  margin-right: 90px;
+  margin-right: 40px;
 }
 
 .c-header__list-menu-item {
-  margin-right: 90px;
+  margin-right: 40px;
 }
 
 .c-header__list-menu-item:last-child {
