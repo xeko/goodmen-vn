@@ -1,0 +1,10 @@
+footer a {
+    text-decoration: none;
+}
+.footer-logo {
+    padding-bottom: 1.2em;
+}
+.footer-logo a {
+    color: #000;
+    font-size: 120%;
+}
