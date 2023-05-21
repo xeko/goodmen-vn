@@ -61,3 +61,10 @@ $main-font: 'Montserrat', sans-serif;
 		font-weight: 400;
 	}
 }
+.footer__content-top {
+    &.footer-logo {
+        &a {
+            text-decoration: none;
+        }
+    }
+}
