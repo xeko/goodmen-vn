@@ -1,3 +1,60 @@
+/*************** HEADER BANNER *******************/
+section[class^="color-background-"] .featured-product {
+    background: url(top_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.featured-product:not(.product--no-media)>.product__info-wrapper {
+    padding: 4.2em 10rem !important;
+}
+.product-media-container {
+    background: none;
+}
+.product__info-wrapper .product__title, .sale_txt {
+    color: #fff;
+}
+.product_desc {
+    color: #c0bfbf;
+}
+.sale_txt {
+    font-size: 6em;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    line-height: .8;
+}
+.sale_txt img {
+    width: 12px;
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+}
+.product-form__buttons.btn2 > a {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 14px;    
+    margin-right: 1em;
+}
+.product-form__buttons.btn2 button {
+    border-radius: 14px;    
+    
+}
+.product-form__buttons.btn2 .button:before, .product-form__buttons.btn2 .button:after, 
+section[class^="color-background-"] .product__modal-opener:hover .product__media-icon {
+    display: none;
+}
+section[class^="color-background-"] .product-media-container .media {
+    top: 7.2em;
+}
+.product__info-wrapper .product__title.h1 {
+    font-size: 1.4em;
+    font-weight: 600;    
+}
+section[class^="color-background-"] > div {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*************** FOOTER *******************/
 footer {
     color: #5f6161;
 }
@@ -23,7 +80,7 @@ footer .field__button {
     border: 1px solid #5f6161;
     border-radius: 10px;
     padding: 0.6em 2em;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 .newsletter-form__field-wrapper .field__input {
     border-bottom: 1px solid #5f6161;
@@ -48,3 +105,4 @@ footer .footer__content-bottom {
     border: none;
     padding-top: 0;
 }
+/*************** END FOOTER *******************/

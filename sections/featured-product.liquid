@@ -148,16 +148,17 @@
                   {%- else -%}
                     {{ 'onboarding.product_title' | t }}
                   {%- endif -%}
-                </h2>
+                </h2>                
               {%- when 'price' -%}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
+                  {%- render 'price2',
                     product: product,
                     use_variant: true,
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
                 </div>
+                <div class="product_desc">{{product.description | strip_html}}</div>
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
                     {%- if shop.taxes_included -%}
@@ -289,7 +290,7 @@
                   update_url: false
                 %}
               {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
+                {%- render 'buy-buttons2',
                   block: block,
                   product: product,
                   product_form_id: product_form_id,
@@ -343,10 +344,9 @@
             {% else %}
               href="{{ product.url }}"
             {% endif %}
-            class="link product__view-details animate-arrow"
+            class="link product__view-details animate-arrow f-link" style="display: none;"
           >
             {{ 'products.product.view_full_details' | t }}
-            {% render 'icon-arrow' %}
           </a>
         </product-info>
       </div>
