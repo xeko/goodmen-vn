@@ -1,3 +1,9 @@
+footer {
+    color: #5f6161; 
+}
+footer h2 {
+    font-weight: 600;
+}
 footer a {
     text-decoration: none;
 }
@@ -7,4 +13,29 @@ footer a {
 .footer-logo a {
     color: #000;
     font-size: 120%;
+}
+footer .field__button {
+    position: static;
+    width: auto;
+    border: 1px solid #5f6161;
+    border-radius: 10px;
+    padding: 0.6em 2em;
+    text-transform: uppercase;    
+}
+.newsletter-form__field-wrapper .field__input {
+    border-bottom: 1px solid #5f6161;
+    margin-bottom: 1em;
+}
+.newsletter-form__field-wrapper .field__input + label {
+    color: #b7b8b8;
+    left: 0;
+}
+footer .list-social {
+    justify-content: flex-start;
+}
+footer .footer-block__heading {
+    text-align: left;
+}
+footer .newsletter-form {
+    margin: 0;
 }
