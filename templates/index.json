@@ -2,6 +2,7 @@
   "sections": {
     "a404b289-2a17-4392-9d2b-9c04d05379ef": {
       "type": "home-furture-product",
+      "disabled": true,
       "blocks": {
         "template--19080468529471__a404b289-2a17-4392-9d2b-9c04d05379ef-168468322569a4115a-0": {
           "type": "text",

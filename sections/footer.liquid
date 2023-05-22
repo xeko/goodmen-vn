@@ -52,7 +52,7 @@
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
-        <div class="footer-logo"><a href="/">GOODMEN</a></div>
+        <div class="footer-logo"><a href="/"><img src="{{ 'logo-footer.png' | asset_url }}" ></a></div>
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -228,7 +228,7 @@
           {%- if section.settings.show_social and has_social_icons -%}
             {%- render 'social-icons' -%}
           {%- endif -%}
-              
+
         {%- endif -%}
         
       </div>

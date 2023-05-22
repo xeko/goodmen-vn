@@ -1,5 +1,5 @@
 footer {
-    color: #5f6161; 
+    color: #5f6161;
 }
 footer h2 {
     font-weight: 600;
@@ -13,6 +13,9 @@ footer a {
 .footer-logo a {
     color: #000;
     font-size: 120%;
+}
+.footer-logo img {
+    max-width: 120px;
 }
 footer .field__button {
     position: static;
@@ -35,7 +38,13 @@ footer .list-social {
 }
 footer .footer-block__heading {
     text-align: left;
+    font-family: Montserrat,sans-serif;
+    color: #5f6161;
 }
 footer .newsletter-form {
     margin: 0;
+}
+footer .footer__content-bottom {
+    border: none;
+    padding-top: 0;
 }
