@@ -10,7 +10,7 @@ const watchFiles = (done) => {
 exports.watchFiles = watchFiles;
 
 const compileSass = (done) => {
-    src("./src/scss/test.scss", {sourcemaps: true})
+    src("./src/scss/style-add.scss", {sourcemaps: true})
             .pipe(sass())
             .pipe(gcmq())
             .pipe(dest("./assets", {sourcemaps: "./sourcemaps"}));

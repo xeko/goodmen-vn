@@ -55,21 +55,11 @@
       assign discount = product.compare_at_price | minus: product.price
       assign discountrate = discount | times: 100.0 | divided_by: product.compare_at_price
       -%}
-      {{discount}}<br>
-      {{discountrate}}
        {%- if product.compare_at_price > product.price and product.available -%}
-         <p class="discountrate">
-            {% if show_discount ==  'yen' %}
-              <span>{{ discount | money }} OFF</span>
-            {% elsif show_discount ==  'percent' %}
-               <span>{{ discountrate }}% OFF</span>
-            {%  endif %}
-           </p>
-       {%- endif -%}
-      {% assign sale_txt = product.metafields.custom.sale %}
-        <div class="sale_txt test"><img src="{{ 'sale.png' | asset_url }}">
-          {{product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency| times: 100| remove:'.0' }}%%
-        </div>
+           <div class="sale_txt"><img src="{{ 'sale.png' | asset_url }}">
+            {{ discountrate | ceil }}%
+          </div>
+       {%- endif -%}        
     </div>    
   </div>  
 </div>

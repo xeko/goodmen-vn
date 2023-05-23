@@ -4,17 +4,37 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "50a96b48-64cb-4ad3-9418-955dccdf420f": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact",
+            "subtext": "<p>Địa chỉ : 275 Nguyễn Trãi - Thanh Xuân - Hà Nội<br\/>Hotline : 0379.676.540<br\/>Email : lienhe@goodmanvietnam.com<\/p>"
+          }
+        },
+        "5b0c0664-73b9-49f5-96ed-69ee74b7b7d6": {
+          "type": "text",
+          "settings": {
+            "heading": "Chính sách",
+            "subtext": "<ul><li><a href=\"#\" title=\"#\">Chính sách thanh toán<\/a><\/li><li><a href=\"#\" title=\"#\">Điều khoản sử dụng<\/a><\/li><li><a href=\"#\" title=\"#\">Chính sách bảo mật<\/a><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "50a96b48-64cb-4ad3-9418-955dccdf420f",
+        "5b0c0664-73b9-49f5-96ed-69ee74b7b7d6"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
-        "margin_top": 48,
+        "margin_top": 36,
         "padding_top": 36,
         "padding_bottom": 36
       }

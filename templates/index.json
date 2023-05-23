@@ -1,81 +1,167 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "674c40ae-a0b6-42b8-bee6-49df48c846bf": {
+      "type": "featured-product",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-1": {
+          "type": "title",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
-        "text": {
-          "type": "text",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-3": {
+          "type": "variant_picker",
+          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "picker_type": "button"
           }
         },
-        "button": {
-          "type": "buttons",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-5": {
+          "type": "buy_buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "show_dynamic_checkout": true
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-1",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-2",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-3",
+        "template--19080468529471__674c40ae-a0b6-42b8-bee6-49df48c846bf-16847230363551d2dc-5"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "product": "upgrade-your-skin-care-routine",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 44
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "89438783-7263-4d93-80f2-fecb84625569": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_feature1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "COMBO QUÀ TẶNG",
+            "link": "#"
+          }
+        },
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_feature1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Sữa rửa mặt",
+            "link": "#"
+          }
+        },
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_feature1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Tắm gội",
+            "link": "#"
+          }
+        },
+        "d825ba9a-8bc5-4c86-9779-8b63ad7855f6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_feature1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Vệ sinh cậu bé",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-0",
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-1",
+        "template--19097913033022__89438783-7263-4d93-80f2-fecb84625569-16848084801602ee5d-2",
+        "d825ba9a-8bc5-4c86-9779-8b63ad7855f6"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
+        "title": "Bạn tìm gì hôm nay?",
+        "heading_size": "h1",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 28,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "12c80c6f-c87e-41c1-8137-4dca910314cd": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd-16848084801602ee5d-0": {
+          "type": "column",
+          "settings": {
+            "title": "Chất lượng đảm bảo",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd-16848084801602ee5d-1": {
+          "type": "column",
+          "settings": {
+            "title": "Tiết kiệm thời gian",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd-16848084801602ee5d-0",
+        "template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd-16848084801602ee5d-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "674c40ae-a0b6-42b8-bee6-49df48c846bf",
+    "89438783-7263-4d93-80f2-fecb84625569",
+    "12c80c6f-c87e-41c1-8137-4dca910314cd"
   ]
 }

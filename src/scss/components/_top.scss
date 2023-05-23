@@ -1,0 +1,81 @@
+.section-template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd-padding {
+    background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground),.04),rgba(var(--color-foreground),.04));
+    padding: 0 !important;
+    margin: 4em 0;
+}
+.multicolumn .title.inline-richtext, #MainContent h2 {
+    margin: auto;
+    font: {
+        family: Montserrat, sans-serif;
+        weight: 600;
+        size: 3rem;
+    }
+    color: #5f6161;
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+}
+#Slider-template--19097913033022__89438783-7263-4d93-80f2-fecb84625569 li {
+    position: relative;
+    text-align: center;
+    .multicolumn-card__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 0.8em;
+        a {
+          text-transform: uppercase;  
+            > span {
+                display: none;
+            }
+        }
+    }
+}
+#Slider-template--19097913033022__12c80c6f-c87e-41c1-8137-4dca910314cd li {
+    text-align: right;
+    h3 {
+        display: inline-flex;
+        padding-left: 2.4em;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    &:nth-child(1), &:nth-child(2) {
+        h3 {
+            background: url(icon_thoi_gian.png) no-repeat center left;
+            background-size: contain;
+        }
+    }
+    &:nth-child(2) {
+        text-align: left;
+    }
+}
+.h-section--product-tabs .media {
+    position: static;    
+}
+.category-btn {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 2em;
+    li {
+        padding: 2px 12px;
+        border: 1px solid #5f6161;
+        border-radius: 12px;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+    a {
+        color: #5f6161;        
+        text: {
+            transform: uppercase;            
+            decoration: none;            
+        }
+        font: {
+            size: 14px;
+            family: Montserrat, sans-serif;
+        }
+    }
+}
