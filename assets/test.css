@@ -1,0 +1,41 @@
+.c-title {
+  color: red;
+}
+
+.c-title:hover {
+  color: blue;
+}
+
+.c-button {
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #1c273e;
+  color: #efeeea;
+}
+
+.c-title {
+  color: red;
+}
+
+.c-title:hover {
+  color: blue;
+}
+
+h3 {
+  color: blue;
+}
+
+h3:hover {
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .c-title {
+    color: yellow;
+  }
+
+  .c-button {
+    color: yellow;
+  }
+}
+/*# sourceMappingURL=sourcemaps/test.css.map */

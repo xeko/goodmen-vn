@@ -1,0 +1,15 @@
+@use "components/_c-title";
+@use "components/_c-button";
+
+.c-title {
+    color: red;
+    &:hover {
+        color: blue;
+    }
+}
+h3 {
+    color: blue;
+    &:hover {
+        color: #000;
+    }
+}
