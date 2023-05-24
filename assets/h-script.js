@@ -22,4 +22,23 @@ $(function () {
 
         }
     });
+    
+    $('.accordion-header').click(function (e) {
+        let currentAttrValue = $(this).attr('href');
+
+        if ($(e.target).is('.active')) {
+            $('.accordion .accordion-header').removeClass('active');
+            $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+        } else {
+            $('.accordion .accordion-header').removeClass('active');
+            $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+        }
+
+        e.preventDefault();
+    });
 });

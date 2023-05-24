@@ -216,4 +216,83 @@ footer .footer__content-bottom {
   font-size: 14px;
   font-family: Montserrat, sans-serif;
 }
+
+.faq {
+  display: flex;
+  gap: 1em;
+}
+
+.faq-title {
+  flex: 1 1 120px;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.4em;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #484847;
+}
+
+.faq-title span {
+  display: block;
+  color: #b7b8b8;
+  text-transform: none;
+  font-size: 52%;
+}
+
+.faq #accordionFAQ {
+  flex: 1 1 460px;
+}
+
+.faq #accordionFAQ .accordion-header {
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: all linear 0.15s;
+  display: inline-block;
+  color: #484847;
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+}
+
+.faq #accordionFAQ .accordion-header:after {
+  content: "";
+  background: url(arrow.png) no-repeat center;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: contain;
+  position: relative;
+  top: 4px;
+  position: absolute;
+  right: 0;
+}
+
+.faq #accordionFAQ .accordion-header.active:after {
+  transform: rotate(180deg);
+  transition: all linear 0.15s;
+}
+
+.faq #accordionFAQ .accordion-section-content {
+  color: #a1a5a3;
+  display: none;
+}
+
+.faq #accordionFAQ .accordion-section:nth-child(n+2) {
+  margin-top: 1em;
+}
+
+.google-maps {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.google-maps iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 /*# sourceMappingURL=sourcemaps/style-add.css.map */

@@ -1,0 +1,24 @@
+<div class="page-width page-width--narrow">
+  <div class="google-maps">
+      {{ section.settings.googlemap }}
+  </div>
+ </div> 
+
+{% schema %}
+{
+  "name": "Google Map",
+  "settings": [
+      {
+        "type": "textarea",
+        "id": "googlemap",
+        "label": "Embed google map",
+        "default": "Nhap noi dung..."
+      }
+  ],
+  "presets": [
+    {
+      "name": "Google Map"
+    }
+  ]
+}
+{% endschema %}

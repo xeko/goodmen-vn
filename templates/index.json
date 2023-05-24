@@ -157,11 +157,221 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "63c3eb93-294d-4056-b998-260f0b95e100": {
+      "type": "featured-product-tabs",
+      "blocks": {
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-0": {
+          "type": "tab",
+          "settings": {
+            "title": "Sữa rửa mặt",
+            "collection": "sữa-rửa-mặt",
+            "limit": 8
+          }
+        },
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Tắm gội",
+            "collection": "tắm-gội",
+            "limit": 8
+          }
+        },
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Vệ sinh cậu bé",
+            "collection": "vệ-sinh-cậu-be",
+            "limit": 8
+          }
+        }
+      },
+      "block_order": [
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-0",
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-1",
+        "template--19097913033022__63c3eb93-294d-4056-b998-260f0b95e100-16848217054d34e584-2"
+      ],
+      "settings": {
+        "color": "",
+        "max_width": "",
+        "fullwidth": false,
+        "padding": "",
+        "margin": "",
+        "head": "Danh sách sản phẩm",
+        "button": "",
+        "button_url": "",
+        "navigation": true,
+        "infinite": true,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "columns": 4,
+        "column1440": 4,
+        "column1": 4,
+        "column2": 3,
+        "column3": 1,
+        "column4": 1
+      }
+    },
+    "bedd291c-d448-47e2-95d6-aacb16ed7d2a": {
+      "type": "multicolumn",
+      "blocks": {
+        "7379cbbd-0e86-4ffc-b00d-d7e90bf12c50": {
+          "type": "column",
+          "settings": {
+            "title": "Đổi trả miễn phí",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c86864b7-2448-4db4-8f90-04a97f6b8055": {
+          "type": "column",
+          "settings": {
+            "title": "Miễn phí vận chuyển",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c6086085-dbef-4808-80a9-a8c47ee603b3": {
+          "type": "column",
+          "settings": {
+            "title": "Giao hàng toàn quốc",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7379cbbd-0e86-4ffc-b00d-d7e90bf12c50",
+        "c86864b7-2448-4db4-8f90-04a97f6b8055",
+        "c6086085-dbef-4808-80a9-a8c47ee603b3"
+      ],
+      "settings": {
+        "title": "Chính sách",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ff7e5fba-74eb-48df-93d5-631cd353d4b9": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19097913033022__ff7e5fba-74eb-48df-93d5-631cd353d4b9-1684856476894ba9a0-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Goodmen ra đời với mục đích đem lại nhận thức về tầm quan trọng của việc chăm sóc da mặt và cơ thể cho nam giới, giúp các đấng mày râu tự tin và thành công hơn trong mọi hoạt động. Goodmen không chỉ đơn thuần là một thương hiệu mỹ phẩm, mà còn là một tinh thần, một lối sống dành cho nam giới hiện đại. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--19097913033022__ff7e5fba-74eb-48df-93d5-631cd353d4b9-1684856476894ba9a0-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Các sản phẩm của Goodmen được đặc chế đặc biệt dành riêng cho da và nhu cầu của nam giới, từ các sản phẩm chăm sóc da mặt như sữa rửa mặt, dầu gội, sữa tắm, dung dịch vệ sinh, … đem tới một trải nghiệm chăm sóc tinh gọn hiệu và với chất lượng tốt nhất. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19097913033022__ff7e5fba-74eb-48df-93d5-631cd353d4b9-1684856476894ba9a0-0",
+        "template--19097913033022__ff7e5fba-74eb-48df-93d5-631cd353d4b9-1684856476894ba9a0-1"
+      ],
+      "settings": {
+        "title": "Về chúng tôi",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "50ef5393-6611-4171-be12-5a8685ab0a45": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19097913033022__50ef5393-6611-4171-be12-5a8685ab0a45-1684856476894ba9a0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Clip_Group.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ee906c6a-9c6e-44b9-a1e1-06f7e9c91df2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Clip_Group.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "64c5661a-62e6-4603-a390-e66ae9ccbd63": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Clip_Group.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19097913033022__50ef5393-6611-4171-be12-5a8685ab0a45-1684856476894ba9a0-0",
+        "ee906c6a-9c6e-44b9-a1e1-06f7e9c91df2",
+        "64c5661a-62e6-4603-a390-e66ae9ccbd63"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "674c40ae-a0b6-42b8-bee6-49df48c846bf",
     "89438783-7263-4d93-80f2-fecb84625569",
-    "12c80c6f-c87e-41c1-8137-4dca910314cd"
+    "12c80c6f-c87e-41c1-8137-4dca910314cd",
+    "63c3eb93-294d-4056-b998-260f0b95e100",
+    "bedd291c-d448-47e2-95d6-aacb16ed7d2a",
+    "ff7e5fba-74eb-48df-93d5-631cd353d4b9",
+    "50ef5393-6611-4171-be12-5a8685ab0a45"
   ]
 }

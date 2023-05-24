@@ -1,0 +1,58 @@
+<div class="page-width page-width--narrow">
+  <div class="faq">
+      <div class="faq-title">
+        Câu hỏi<span>Thường gặp</span>
+      </div>
+      <div class="accordion" id="accordionFAQ">
+        {% assign j = 0 %}        
+        {% for block in section.blocks %}
+          {% assign j = j | plus:1 %}
+          {% if j == 1 %}
+            {% assign class_show = ''%}
+          {% else %}
+            {% assign class_show = ''%}
+          {% endif %}
+          <div class="accordion-section">
+            <a class="accordion-header" href="#accordion-{{ block.id }}">
+              {{ block.settings.title }}
+            </a>
+            <div id="accordion-{{ block.id }}" class="accordion-section-content{{ class_show }}">
+              <div class="accordion-body">
+                {{ block.settings.answer }}      
+              </div>
+            </div>
+          </div>      
+        {% endfor %}
+      </div>    
+  </div>
+ </div> 
+
+{% schema %}
+{
+  "name": "Câu hỏi thường gặp",
+  "blocks": [
+    {
+      "name": "faq",
+      "type": "faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tiêu đề",
+          "default": "Tiêu đề"
+        },
+        {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Nội dung "
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Câu hỏi thường gặp"
+    }
+  ]
+}
+{% endschema %}
