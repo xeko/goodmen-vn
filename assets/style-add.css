@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 section[class^=color-background-] .featured-product {
   background: url(top_bg.jpg) no-repeat center;
   background-size: cover;
@@ -135,8 +137,7 @@ footer .footer__content-bottom {
   margin: 4em 0;
 }
 
-.multicolumn .title.inline-richtext,
-#MainContent h2 {
+.multicolumn .title.inline-richtext {
   margin: auto;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -294,5 +295,10 @@ footer .footer__content-bottom {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.card__media .media img {
+  max-height: 420px;
+  object-fit: contain !important;
 }
 /*# sourceMappingURL=sourcemaps/style-add.css.map */

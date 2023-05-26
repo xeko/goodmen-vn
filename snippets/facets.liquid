@@ -341,63 +341,87 @@
                           </facet-remove>
                         {%- endif -%}
                       </div>
-                      <price-range class="facets__price">
-                        <span class="field-currency">{{ cart.currency.symbol }}</span>
-                        <div class="field">
-                          <input
-                            class="field__input"
-                            name="{{ filter.min_value.param_name }}"
-                            id="Filter-{{ filter.label | escape }}-GTE"
-                            {%- if filter.min_value.value -%}
-                              {%- if uses_comma_decimals -%}
-                                value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                      <div class="search-type">
+                        <label>Nhập tên sản phẩm</label>
+                        <predictive-search class="search-modal__form">
+                            <div class="field">
+                              <input type="hidden" name="type" value="product" />
+                              <input type="hidden" name="options[prefix]" value="last" />
+                              <input class="search__input field__input" name="q" value="" placeholder="Tên sản phẩm"
+                                aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" autocapitalize="off" spellcheck="false">
+                            </div>                            
+                        </predictive-search>
+                      </div>
+                      <div class="search-type">
+                        <label>Khoảng giá</label>
+                        <price-range class="facets__price">
+                          <div class="field-price hidden">
+                            <div class="field">
+                              <input class="field__input price-filter-min-text" name="{{ filter.min_value.param_name }}"
+                                id="Filter-{{ filter.label | escape }}-GTE"
+                                {%- if filter.min_value.value -%}
+                                  {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
+                                {%- endif -%}
+                                type="number" placeholder="0" min="0"
+                                {%- if uses_comma_decimals -%}max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"{% endif %}
+                              >
+                            </div>
+                            <div class="field">
+                              <input class="field__input price-filter-max-text"
+                                name="{{ filter.max_value.param_name }}"
+                                id="Filter-{{ filter.label | escape }}-LTE"
+                                {%- if filter.max_value.value -%}{%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
+                                {%- endif -%}
+                                type="number"
+                                min="0"
+                                {%- if uses_comma_decimals -%}
+                                  placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                {%- else -%}
+                                  placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                  max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                {% endif %}>
+                                {{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}
+                            </div>
+                          </div>
+                          <div class="slider-price">
+                            <input min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}" step="1" type="range"
+                              {%- if filter.min_value.value -%}
+                                {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                               {%- else -%}
-                                value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
-                              {%- endif %}
-                            {%- endif -%}
-                            type="number"
-                            placeholder="0"
-                            min="0"
-                            {%- if uses_comma_decimals -%}
-                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-                            {%- else -%}
-                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                            {% endif %}
-                          >
-                          <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
-                            {{- 'products.facets.from' | t -}}
-                          </label>
-                        </div>
-                        {%- if filter_type != 'vertical' -%}
-                          <span class="field-currency">{{ cart.currency.symbol }}</span>
-                        {%- endif -%}
-                        <div class="field">
-                          <input
-                            class="field__input"
-                            name="{{ filter.max_value.param_name }}"
-                            id="Filter-{{ filter.label | escape }}-LTE"
-                            {%- if filter.max_value.value -%}
-                              {%- if uses_comma_decimals -%}
-                                value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                value="0"
+                              {%- endif -%}
+                            />
+                            <input min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' }}" step="1" type="range"
+                              {%- if filter.max_value.value -%}
+                                {%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                               {%- else -%}
-                                value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
-                              {%- endif %}
-                            {%- endif -%}
-                            type="number"
-                            min="0"
-                            {%- if uses_comma_decimals -%}
-                              placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-                              max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
-                            {%- else -%}
-                              placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                              max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
-                            {% endif %}
-                          >
-                          <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">
-                            {{- 'products.facets.to' | t -}}
-                          </label>
-                        </div>
-                      </price-range>
+                                value="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                              {%- endif -%}
+                            />
+                          </div>
+                          {%- assign min_value_price = filter.min_value.value |default:0 -%}
+                          {%- assign max_value_price = filter.max_value.value |default:filter.range_max |default:0  -%}
+                          <div class="field-price">
+                            <span class="from">{{min_value_price | money }}</span> — <span class="to">{{max_value_price | money }}</span>
+                          </div>
+                        </price-range>
+                      </div>
+                      <div class="search-type">
+                        <label>Loại</label>
+                        <ul class="facets__list list-unstyled">
+                        {%- for collection in collections -%}
+                          <li class="list-menu__item facets__item">
+                            <label class="select-filter">                              
+                              <input type="checkbox" name="colection_name" value="{{ collection.title }}" 
+                              {% if value.active %}checked{% endif %}
+                              >
+                              {{ collection.title }}
+                             </label>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                      </div>
                     </div>
                   </details>
               {% endcase %}
@@ -410,10 +434,11 @@
           </div>
           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
           {%- if filter_type == 'horizontal' -%}
-            <div class="active-facets active-facets-desktop">
-              {%- for filter in results.filters -%}
-                {%- for value in filter.active_values -%}
+            <div class="active-facets active-facets-desktop testtest">              
+              {%- for filter in results.filters -%}                
+                {%- for value in filter.active_values -%}                  
                   <facet-remove>
+                    {{value.label}}
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}

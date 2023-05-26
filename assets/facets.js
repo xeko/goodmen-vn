@@ -215,12 +215,15 @@ class PriceRange extends HTMLElement {
     super();
     this.querySelectorAll('input')
       .forEach(element => element.addEventListener('change', this.onRangeChange.bind(this)));
+
     this.setMinAndMaxValues();
+	  this.loadRangePrice();
   }
 
   onRangeChange(event) {
     this.adjustToValidValues(event.currentTarget);
     this.setMinAndMaxValues();
+	this.loadRangePrice();
   }
 
   setMinAndMaxValues() {
@@ -240,6 +243,55 @@ class PriceRange extends HTMLElement {
 
     if (value < min) input.value = min;
     if (value > max) input.value = max;
+  }
+  
+  loadRangePrice(format) {
+	var parent = document.querySelector(".facets__price");
+	if(!parent) return;    	
+	var
+	rangeS = parent.querySelectorAll("input[type=range]"),
+	numberS = parent.querySelectorAll("input[type=number]");
+	rangeS.forEach(function(el) {
+		el.oninput = function() {
+			var slide1 = parseFloat(rangeS[0].value),
+				slide2 = parseFloat(rangeS[1].value);
+			if (slide1 > slide2) {
+				[slide1, slide2] = [slide2, slide1];
+			}
+      
+			numberS[0].value = slide1;
+			numberS[1].value = slide2;
+			
+      let formatter = new Intl.NumberFormat('ja-JP', {
+        style: 'currency',
+        currency: 'JPY'
+      });
+      
+			$('.field-price span.from',parent).html(formatter.format(slide1));
+			$('.field-price span.to',parent).html(formatter.format(slide2));
+			
+      const width = 100*slide2/rangeS[1].max - 100*slide1/rangeS[0].max;
+			const left = 100*slide1/rangeS[0].max;
+			$('.slider-price',parent).css({"--width": width+"%", "--left": left+"%"});
+		}
+	});
+	numberS.forEach(function(el) {
+		el.oninput = function() {
+			var number1 = parseFloat(numberS[0].value),
+			number2 = parseFloat(numberS[1].value);
+					
+			if (number1 > number2) {
+				var tmp = number1;
+				numberS[0].value = number2;
+				numberS[1].value = tmp;
+			}
+			rangeS[0].value = number1;
+			rangeS[1].value = number2;
+		}
+	});
+	const width = 100*rangeS[1].value/rangeS[1].max - 100*rangeS[0].value/rangeS[0].max;
+	const left = 100*rangeS[0].value/rangeS[0].max;
+	$('.slider-price',parent).css({"--width": width+"%", "--left": left+"%"});
   }
 }
 

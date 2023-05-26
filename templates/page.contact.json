@@ -1,10 +1,10 @@
 {
   "sections": {
     "main": {
-      "type": "main-contacr",
+      "type": "main-contact",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     },
     "form": {
@@ -13,13 +13,38 @@
         "heading": "",
         "heading_size": "h1",
         "color_scheme": "background-1",
+        "contact_content": "<p>デフォルトのテキスト<\/p>",
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "4c3af8b4-f0fe-4ba1-9e36-4139437f4f2c": {
+      "type": "contact-google-map",
+      "settings": {
+        "googlemap": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3725.003076853777!2d105.80563117523303!3d20.992513780647755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad546dc547af%3A0x511d26f3bebd6cd9!2sT%C3%B2a%20C%2C%20Golden%20Land!5e0!3m2!1sen!2sjp!4v1684906892843!5m2!1sen!2sjp\" width=\"600\" height=\"450\" style=\"border: 0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
+      }
+    },
+    "b586ed4f-a177-4ba7-bfac-a167eb3cad78": {
+      "type": "contact-faq",
+      "blocks": {
+        "2687dc9d-0d49-419a-b576-4fda1ce9faad": {
+          "type": "faq",
+          "settings": {
+            "title": "Tiêu đề",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "2687dc9d-0d49-419a-b576-4fda1ce9faad"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "4c3af8b4-f0fe-4ba1-9e36-4139437f4f2c",
+    "b586ed4f-a177-4ba7-bfac-a167eb3cad78"
   ]
 }
